@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="js/style.css">
+        <link rel="stylesheet" href="js/giphy.html">
+
+</head>
+
+
+
+
+
+	<body>
+	<!-- twitter pull top 15 -->
+<!-- 			<h1>Tweets</h1>
+			<ol id="tweets"></ol>
+			<a href="#" id="submit">get tweets</a>  -->
+
+
+	<div id="images"></div>
+
+    <input id="pac-input" class="controls" type="text"
+        placeholder="Enter a location">
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <span id="place-name"  class="title"></span><br>
+      Place ID <span id="place-id"></span><br>
+      <span id="place-address"></span>
+    </div>
+
+    <form id="form-container" class="form-container">
+        <label for="street">Street: </label><input type="text" id="street" value="">
+        <label for="city">City: </label><input type="text" id="city" value="">
+        <button id="submit-btn">Submit</button>
+    </form>
+
+    <hr>
+
+    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+
+
+    <div class="wikipedia-container">
+        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+    </div>
+
+
+    <div class="nytimes-container">
+        <h3 id="nytimes-header">New York Times Articles</h3>
+        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+    </div>
+
+    
+
+    <h1 class="title">Giphy API Search</h1>
+
+<div class="input-wrapper empty">
+    <input type="text" class="query" />
+    <div class="loader"></div>
+    <div class="clear"></div>
+</div>
+
+<div class="result">
+  <p class="no-result center">
+   
+  </p>
+</div>
+
+<button class="random">Get Another GIF</button>
+<div id="weather">
+</div>
+
+<div>
+<!--Random Button-->  
+   <button id="randomButton" class="btn btn-default" type="button"
+           href="https://en.wikipedia.org/wiki/Special:Random">Random Page</button>
+  
+  <!--Search Bar-->  
+  <div class="col-lg-6">
+    <div class="input-group">      
+      <input id="searchInput" type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button id="searchButton" class="btn btn-default" type="button">Check Wikipedia</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  
+   <!--Output Section-->
+  
+  <ul id="output">
+  
+  </ul>
+  
+</div>
+
+<!-- 
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV1N_3W9IwH7QQHAnr8h7453isi-MN3sg&libraries=places&callback=initMap"
+        async defer></script> -->
+               
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		 <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV1N_3W9IwH7QQHAnr8h7453isi-MN3sg&libraries=places&callback=initMap"
+        async defer></script>
+	</body>
+</html>

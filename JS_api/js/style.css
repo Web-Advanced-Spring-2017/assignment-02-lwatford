@@ -1,0 +1,242 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding-bottom: 100px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ img {
+	height: 100px;
+	float: left;
+}
+
+#map {
+	height: 200px;
+	width:200px;
+	 padding: 200px;
+}
+/* Optional: Makes the sample page fill the window. */
+
+.controls {
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	height: 29px;
+	margin-left: 17px;
+	margin-top: 10px;
+	outline: none;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 400px;
+}
+
+.controls:focus {
+	border-color: #4d90fe;
+}
+.title {
+	font-weight: bold;
+}
+#infowindow-content {
+	display: none;
+}
+#map #infowindow-content {
+	display: inline;
+}
+
+/*      * {box-sizing:border-box;}
+body {background-color: #CCC;}*/
+
+.bgimg {
+		position:fixed;
+		top: 0;
+		left: 0;
+		width:100%;
+		z-index:-1;
+		opacity:1;
+		
+}
+
+.greeting {
+		color:black;
+		text-shadow: 1px 1px 3px rgba(255,255,255, .5);
+		text-align: center;
+}
+
+.wikipedia-container {
+		float:right;
+		width:290px;
+		padding:40px;
+		margin-right: 10px;
+		background-color: rgba(255,255,255,0.7);
+}
+
+.nytimes-container {
+		padding: 10px;
+		margin-right:300px;
+		background-color: rgba(255,255,255,0.7);
+}
+
+.article-list {
+		margin: 0;
+		padding: 0;
+}
+
+.article {
+		list-style-type: none;
+		padding:10px;
+		border-top: 1px solid #CCC;
+}
+.article:first-child {
+		border-top:none;
+}
+
+.title {
+	text-align: center;
+	font-weight: 200;
+	margin-top: 50px;
+}
+
+.input-wrapper {
+	position: relative;
+	width: 90%;
+	max-width: 500px;
+	margin: 50px auto 0;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.input-wrapper .query {
+	height: 50px;
+	width: 100%;
+	display: block;
+	padding: 0 25px;
+	border: 1px solid #ccc;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.input-wrapper .query:focus {
+	outline: none;
+	border: 1px solid #2196F3;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.input-wrapper .loader {
+	height: 5px;
+	margin: 0;
+	padding: 0;
+	background: white;
+	margin: 0 auto;
+	position: relative;
+}
+.input-wrapper .loader:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #2196F3;
+	width: 0%;
+	height: 5px;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.input-wrapper .loader.done:before {
+	width: 100%;
+}
+.input-wrapper .clear {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 50px;
+	width: 30px;
+	opacity: 1;
+}
+.input-wrapper .clear:before {
+	content: '\00d7';
+	color: #2196F3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	line-height: 50px;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.input-wrapper .clear:hover:before {
+	cursor: pointer;
+}
+.input-wrapper.active {
+	margin-top: -55px;
+}
+.input-wrapper.active .query {
+	height: 30px;
+	margin-top: 0px;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.input-wrapper.active .clear {
+	height: 30px;
+}
+.input-wrapper.active .clear:before {
+	line-height: 30px;
+}
+.input-wrapper.empty .clear {
+	opacity: 0;
+}
+
+.result {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 5% 25px 0;
+	/* background: #eee; */
+}
+.result img, .result p.no-results {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	opacity: 1;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.result img.hidden, .result p.no-results.hidden {
+	opacity: 0;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.result p.no-result {
+	font-weight: 200;
+}
+.result p.no-result.center {
+	text-align: center;
+}
+
+.random {
+	width: 90%;
+	max-width: 500px;
+	margin: 50px auto;
+	height: 50px;
+	display: block;
+	background: #2196F3;
+	color: white;
+	border: none;
+	opacity: 0;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
+}
+.random:hover {
+	background: #0c7cd5;
+}
+.random.active {
+	opacity: 1;
+}
+
+
+
+
+ 
